@@ -11,6 +11,7 @@ class ListForm extends React.Component {
 
   handleChanges = e => {
     // update state with each keystroke
+    this.setState({item: e.target.value})
   };
 
   // class property to submit form
