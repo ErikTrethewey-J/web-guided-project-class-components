@@ -2,8 +2,11 @@ import React from "react";
 
 class ListForm extends React.Component {
   // Constructor with state
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
+    this.state = {
+      item: 'asdfkljh'
+    }
   }
 
   handleChanges = e => {
@@ -16,7 +19,11 @@ class ListForm extends React.Component {
     return (
       <form>
         {/* This is an uncontrolled component 😬 We want it to be controlled by state */}
-        <input type="text" name="item" />
+        <input
+          type="text"
+          name="item"
+          value={this.state.item}
+        />
         <button>Add</button>
       </form>
     );
