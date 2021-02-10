@@ -66,6 +66,11 @@ class App extends React.Component {
   }
 
   addItem = (itemName) => {
+    const newItem = {
+      id: Date.now(),
+      name: itemName,
+      purchased: false
+    }
 
   }
 
