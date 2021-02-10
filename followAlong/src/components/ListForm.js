@@ -15,6 +15,9 @@ class ListForm extends React.Component {
   };
 
   // class property to submit form
+  submitItem = e => {
+    e.preventDefault();
+  }
 
   render() {
     return (
