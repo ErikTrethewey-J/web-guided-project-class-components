@@ -30,7 +30,7 @@ class AppFunc extends React.Component {
   render() {
     return (
       <div>
-        <Person name={name} />
+        <Person name={this.state.name} />
         <button onClick={handleClick}>MAKE IT ALLISON!</button>
       </div>
     );
