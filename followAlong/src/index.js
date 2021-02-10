@@ -71,7 +71,10 @@ class App extends React.Component {
       name: itemName,
       purchased: false
     }
-
+    this.setState({
+      ...this.state,
+      groceries: [...groceries, newItem]
+    })
   }
 
   // Class methods to update state
