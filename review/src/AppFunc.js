@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { render } from "sass";
 
 const Person = (props) => {
   return (
@@ -17,12 +18,14 @@ const AppFunc = () => {
     setName("Allison");
   };
 
-  return (
-    <div>
-      <Person name={name} />
-      <button onClick={handleClick}>MAKE IT ALLISON!</button>
-    </div>
-  );
+  render() {
+    return (
+      <div>
+        <Person name={name} />
+        <button onClick={handleClick}>MAKE IT ALLISON!</button>
+      </div>
+    );
+  }
 };
 
 export default AppFunc;
