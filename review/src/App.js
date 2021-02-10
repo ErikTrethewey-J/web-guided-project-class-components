@@ -5,7 +5,7 @@ import AppFunc from "./AppFunc";
 const App = () => {
   return (
     <div>
-      <AppFunc />
+      <AppClass />
     </div>
   );
 };

@@ -18,14 +18,16 @@ class AppClass extends React.Component {
   constructor() {
     super();
     this.state = {
-      name: "Warren"
+      name: "Warren",
+      key1: "test1",
+      key2: "turtles"
     };
   }
 
   handleNameButtonClick = (e) => {
     this.setState({
       ...this.state,
-      name: "Allison"
+      name: "WEBPT24"
     });
   };
 
@@ -34,7 +36,7 @@ class AppClass extends React.Component {
     return (
       <div>
         <Person name={this.state.name} />
-        <button onClick={this.handleNameButtonClick}>MAKE IS ALLISON</button>
+        <button onClick={this.handleNameButtonClick}>MAKE IT WEBPT24</button>
       </div>
     );
   }
