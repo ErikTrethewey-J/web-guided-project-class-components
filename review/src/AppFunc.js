@@ -21,7 +21,10 @@ class AppFunc extends React.Component {
   }
 
   handleClick = () => {
-    this.setState({name: "Allison"})
+    this.setState({
+      ...this.state,
+      name: "Allison"
+    });
   };
 
   render() {
