@@ -17,7 +17,7 @@ class ListForm extends React.Component {
   // class property to submit form
   submitItem = e => {
     e.preventDefault();
-    // this.setState({ item: '' });
+    this.setState({ item: '' });
     this.props.addItem(this.state.item, e);
   }
 
@@ -30,7 +30,7 @@ class ListForm extends React.Component {
           value={this.state.item}
           onChange={this.handleChanges}
         />
-        <button>Add</button>
+        <button onClick={this.submitItem}>Add</button>
       </form>
     );
   }
