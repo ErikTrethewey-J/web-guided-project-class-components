@@ -12,10 +12,16 @@ const Person = (props) => {
   );
 };
 
-const AppFunc = () => {
-  const [name, setName] = useState("WEBPT24");
-  const handleClick = () => {
-    setName("Allison");
+class AppFunc extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "WEBPT24"
+    }
+  }
+
+  handleClick = () => {
+    this.setState({name: "Allison"})
   };
 
   render() {
