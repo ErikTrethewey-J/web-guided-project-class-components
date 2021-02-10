@@ -49,6 +49,18 @@ class App extends React.Component {
 
   togglePurchased = (itemId) => {
     console.log("toggling", itemId);
+    // find the item in the groceries array (this.state.groceries)
+    const newGroceries = this.state.groceries.map(item => {
+      if (itemId === item.id) {
+        return {
+          ...item,
+          purchased: !item.purchased
+        }
+      }
+      else { return item;}
+    })
+
+    // update state to toggle purchased on this item, but keep all of the other items the same
   }
 
   // Class methods to update state
