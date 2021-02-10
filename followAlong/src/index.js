@@ -65,7 +65,8 @@ class App extends React.Component {
     })
   }
 
-  addItem = (itemName) => {
+  addItem = (itemName, e) => {
+    e.preventDefault();
     const newItem = {
       id: Date.now(),
       name: itemName,
