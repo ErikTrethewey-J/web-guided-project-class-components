@@ -48,7 +48,7 @@ class App extends React.Component {
   }
 
   togglePurchased = (itemId) => {
-    // find the item in the groceries array (this.state.groceries)
+    // iterate through the groceries array (this.state.groceries) to toggle only the item in question
     const newGroceries = this.state.groceries.map(item => {
       if (itemId === item.id) {
         return {
@@ -58,7 +58,7 @@ class App extends React.Component {
       }
       else { return item;}
     })
-    // update state to toggle purchased on this item, but keep all of the other items the same
+    // update "groceries" state value to this new array
     this.setState({
       ...this.state,
       groceries: newGroceries
