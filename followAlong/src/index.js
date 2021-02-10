@@ -48,7 +48,6 @@ class App extends React.Component {
   }
 
   togglePurchased = (itemId) => {
-    console.log("toggling", itemId);
     // find the item in the groceries array (this.state.groceries)
     const newGroceries = this.state.groceries.map(item => {
       if (itemId === item.id) {
