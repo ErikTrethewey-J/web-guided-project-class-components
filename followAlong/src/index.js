@@ -78,6 +78,10 @@ class App extends React.Component {
     })
   }
 
+  clearPurchased = () => {
+    console.log('clearing purchased items');
+  }
+
   // Class methods to update state
   render() {
     return (
