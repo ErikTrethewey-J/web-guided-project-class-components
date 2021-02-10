@@ -82,6 +82,7 @@ class App extends React.Component {
     console.log('clearing purchased items');
     // if item.purchased is true, then filter it out of the this.state.groceries array
     this.setState({
+      ...this.state,
       groceries: this.state.groceries.filter(item => !item.purchased)
     })
   }
