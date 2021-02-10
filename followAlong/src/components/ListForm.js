@@ -5,12 +5,13 @@ class ListForm extends React.Component {
   constructor() {
     super();
     this.state = {
-      item: 'asdfkljh'
+      item: ''
     }
   }
 
   handleChanges = e => {
     // update state with each keystroke
+    console.log(e.target.value)
     this.setState({item: e.target.value})
   };
 
@@ -24,6 +25,7 @@ class ListForm extends React.Component {
           type="text"
           name="item"
           value={this.state.item}
+          onChange={this.handleChanges}
         />
         <button>Add</button>
       </form>
