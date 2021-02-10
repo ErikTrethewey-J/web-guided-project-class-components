@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { render } from "sass";
 
 const Person = (props) => {
   return (
