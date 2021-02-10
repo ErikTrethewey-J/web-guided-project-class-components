@@ -83,7 +83,7 @@ class App extends React.Component {
       <div className="App">
         <div className="header">
            <h1>Shopping List</h1>
-           <ListForm />
+          <ListForm addItem={this.addItem} />
          </div>
         <GroceryList togglePurchased={this.togglePurchased} groceries={this.state.groceries} />
        </div>
