@@ -15,6 +15,12 @@ class Person extends React.Component {
 } 
 
 class AppClass extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      name: "Warren"
+    };
+  }
 
   handleNameButtonClick = (e) => {
     this.setState({
