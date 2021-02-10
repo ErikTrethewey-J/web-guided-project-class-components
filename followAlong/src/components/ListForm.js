@@ -23,14 +23,14 @@ class ListForm extends React.Component {
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.submitItem}>
         <input
           type="text"
           name="item"
           value={this.state.item}
           onChange={this.handleChanges}
         />
-        <button onClick={this.submitItem}>Add</button>
+        <button>Add</button>
       </form>
     );
   }
