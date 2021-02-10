@@ -11,7 +11,7 @@ const Person = (props) => {
   );
 };
 
-class AppFunc extends React.Component {
+class App24 extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -36,4 +36,4 @@ class AppFunc extends React.Component {
   }
 };
 
-export default AppFunc;
+export default App24;

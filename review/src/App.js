@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import AppFunc from "./AppFunc";
+import App24 from "./App24";
 
 const App = () => {
   return (
     <div>
-      <AppFunc />
+      <App24 />
     </div>
   );
 };
