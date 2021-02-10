@@ -47,6 +47,10 @@ class App extends React.Component {
     }
   }
 
+  togglePurchased = (itemId) => {
+    console.log("toggling", itemId);
+  }
+
   // Class methods to update state
   render() {
     return (
