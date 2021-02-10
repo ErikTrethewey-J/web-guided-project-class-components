@@ -27,7 +27,7 @@ class ListForm extends React.Component {
         <input
           type="text"
           name="item"
-          value={"test controlled value"}
+          value={this.state.item}
           onChange={this.handleChanges}
         />
         <button>Add</button>
