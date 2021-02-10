@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import AppClass from "./AppClass";
 import AppFunc from "./AppFunc";
 
 const App = () => {
   return (
     <div>
-      <AppClass />
+      <AppFunc />
     </div>
   );
 };
