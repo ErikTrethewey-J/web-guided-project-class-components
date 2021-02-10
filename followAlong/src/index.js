@@ -59,8 +59,11 @@ class App extends React.Component {
       }
       else { return item;}
     })
-
     // update state to toggle purchased on this item, but keep all of the other items the same
+    this.setState({
+      ...this.state,
+      groceries: newGroceries
+    })
   }
 
   // Class methods to update state
