@@ -11,7 +11,6 @@ class ListForm extends React.Component {
 
   handleChanges = e => {
     // update state with each keystroke
-    console.log(e.target.value)
     this.setState({item: e.target.value})
   };
 
@@ -20,7 +19,6 @@ class ListForm extends React.Component {
   render() {
     return (
       <form>
-        {/* This is an uncontrolled component 😬 We want it to be controlled by state */}
         <input
           type="text"
           name="item"
