@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import AppClass from "./AppClass";
 
 const App = () => {
   return (
     <div>
-      <h1>Hello WEBPT24</h1>
+      <AppClass />
     </div>
   );
 };
